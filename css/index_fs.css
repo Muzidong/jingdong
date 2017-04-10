@@ -1,0 +1,140 @@
+.fs{z-index: 9;margin-bottom: 10px;}
+.fs_inner{z-index: 1;height: 480px;background-color: #f6f6f6;}
+.fs,.fs_inner{position: relative;}
+.fs_act{display: block;width: 100%;position: absolute;left: 0;top: 0;}
+
+.fs_col1,.fs_col2{
+    float: left;
+    height: 100%;
+}
+.fs_col1{
+    width: 190px;
+    margin-right: 10px;
+    background-color: hotpink;
+}
+.fs_col2{
+    width: 790px;
+    height: 340px;
+    overflow: hidden;
+	position: relative;
+}
+.fs_col2 .img {
+	width: 6400px;
+	position: absolute;
+	left: 0px;
+	top: 0;
+}
+.fs_col2 .img li {
+	float: left;
+}
+.fs_col2 .num {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	left: 0;
+	text-align: center;
+	font-size: 0px;
+}
+.fs_col2 .num li {
+	width: 10px;
+	height: 10px;
+	background: #888;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 3px;
+	cursor: pointer;
+}
+.fs_col2 .num li.on {
+	background: #F60;
+}
+.fs_col2 .btn {
+	width: 30px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 40px;
+	font-family: "宋体";
+	display: none;
+}
+.fs_col2:hover .btn {	display: block;}
+.fs_col2 .btn_l {	left: 0;}
+.fs_col2 .btn_r {	right: 0;}
+.btn_l:hover{color: red;}
+.btn_r:hover{color: red;}
+
+.fs_col3{
+    float: right;
+    margin-left: 10px;
+    width: 190px;
+    height: 100%;
+    background-color: white;
+}
+.user{
+	padding: 0 10px;
+    height: 115px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.news{
+	overflow: hidden;
+    padding: 0 15px;
+    height: 154px;
+}
+.tab_head{
+	padding: 8px 0 4px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    line-height: 14px;
+}
+
+.tab_head_item {
+    color: #333;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right: 1px solid #dfe0e1;
+}
+.tab_head_item:hover{color: #333;}
+.news_first {
+    padding-left: 0;
+}
+.news .news_last {
+    padding-right: 0;
+    border-right: 0;
+}
+.news_tab_active{
+	position: absolute;
+    bottom: -1px;
+    left: -2px;
+    width: 28px;
+    height: 2px;
+    background: #db192b;
+}
+.news_more{
+	position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.tab_content{    padding: 12px 0;}
+.tab_content_item{display: none;}
+.tab_content_item_on{display: block;}
+.news_item{
+	line-height: 24px;
+    max-width: 160px;
+    _width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.service{
+	overflow: hidden;
+    position: relative;
+    height: 210px;
+}
